@@ -39,7 +39,7 @@ axis([-2 2 -2 2]);
 title('Constellation');
 xlabel('Re(ak)');
 ylabel('Im(ak)');
-print("graphs/q4.png");
+#print("graphs/q4.png");
 
 # Question 5
 
@@ -55,7 +55,11 @@ print("graphs/q5.png");
 
 t_filtre = [0 : T/F : L*T - (T/F)];
 h_t = gen_filters3('srrc', t_filtre, T, F, L, alpha);
-#plot(t_filtre, h_t, '+');
+plot(t_filtre, h_t);
+title('Reponse');
+xlabel('Temps[s]');
+print("graphs/q6.png");
+
 
 # Question 7
 
