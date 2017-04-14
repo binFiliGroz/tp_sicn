@@ -21,7 +21,7 @@ nb_trajectoires=floor(length(y_t)/length(tvisu));
 y_t_mat=reshape(y_t(1:nb_trajectoires*taille_visu*F),taille_visu*F,nb_trajectoires);
 
 % Affichage du diagramme de l'oeil
-figure;
+#figure;
 plot(tvisu,y_t_mat);
 title('Diagramme de l''oeil du signal recu');
 xlabel('Temps [s]');
